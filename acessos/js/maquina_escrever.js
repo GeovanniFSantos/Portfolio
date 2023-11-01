@@ -3,10 +3,10 @@ const fName = meuNome.innerHTML;
 const botaoVerMais = document.querySelector('button');
 const habilidades = document.querySelectorAll('.escondido');
 const node = document.querySelector('#fundo')
-meuNome.innerHTML='';
+meuNome.innerHTML = '';
 
-function cliqueVer (e) {
-    habilidades.forEach( (elemento) => {
+function cliqueVer(e) {
+    habilidades.forEach((elemento) => {
         if (elemento.classList.contains('escondido')) {
             elemento.classList.remove('escondido');
             elemento.classList.add('visivel');
@@ -16,23 +16,24 @@ function cliqueVer (e) {
             elemento.classList.remove('visivel');
             botaoVerMais.innerHTML = 'Ver mais';
         }
-    } )
+    })
 }
 
-function maisHabilidades (elemento) {
+function maisHabilidades(elemento) {
     elemento.addEventListener('click', cliqueVer)
 }
 
-function typeWriter (nome) {
-    setTimeout( () => {
-    const meuNomeF = nome.split('');
-    meuNome.innerHTML='';
-    meuNomeF.forEach( (letra, index) => {
-        setTimeout(function (){
-            meuNome.innerHTML += letra;
-        }, 150 * index)
-    })}, 1500)
-    
+function typeWriter(nome) {
+    setTimeout(() => {
+        const meuNomeF = nome.split('');
+        meuNome.innerHTML = '';
+        meuNomeF.forEach((letra, index) => {
+            setTimeout(function () {
+                meuNome.innerHTML += letra;
+            }, 150 * index)
+        })
+    }, 1500)
+
 }
 
 /* typeWriter(fName); */

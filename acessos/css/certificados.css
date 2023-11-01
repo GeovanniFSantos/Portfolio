@@ -14,7 +14,7 @@
     padding-bottom: 70px;
 }
 
-button {
+.button2 {
     padding: 10px 100px;
     border-radius: 25px;
     cursor: pointer;
@@ -24,7 +24,7 @@ button {
     transition: ease-in-out 0.3s;
 }
 
-button:hover {
+.button2:hover {
     background-color: #3d0d57;
 }
 
@@ -73,7 +73,7 @@ button:hover {
     padding: 5% 0;
 }
 
-.escondido {
+.noneVisivel {
     opacity: 0;
     display: none;
     transition: 1000ms;
